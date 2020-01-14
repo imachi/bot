@@ -1,8 +1,8 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "./",
     "rewrites": [{
-      "source": "webhook",
+      "source": "/webhook",
       "function": "app"
     }],
     "ignore": [

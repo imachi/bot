@@ -1,11 +1,11 @@
-const functions = require('firebase-functions');
+const functions = require('firebase-functions')
 const line = require('@line/bot-sdk')
 const express = require('express')
 const message = require('line-message-builder')
 
 const config = {
-	secret = functions.config().channel.secret,
-	token = functions.config().channel.accesstoken
+	channelSecret = functions.config().channel.secret,
+	channelAccessToken = functions.config().channel.accesstoken
 }
 
 const app = express();
